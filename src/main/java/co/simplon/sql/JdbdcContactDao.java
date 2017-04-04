@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 public class JdbdcContactDao implements ContactsDAO {
 	@Override
 	public List<String> RecupererEmailParContactType(String type) throws Exception {
-		final Logger monLogger	=Logger.getLogger("monlogger");
+		final Logger monLogger = Logger.getLogger("monlogger");
 		String databaseUrl = "jdbc:mysql://sql8.freemysqlhosting.net:3306/sql8157970?user=sql8157970&password=GTyyUfvfQ6";
 
 		DriverManager.registerDriver(new com.mysql.jdbc.Driver());
@@ -33,5 +33,3 @@ public class JdbdcContactDao implements ContactsDAO {
 	}
 
 }
-
-
